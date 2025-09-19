@@ -107,33 +107,36 @@ export const listTools = [
 
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
+import Proyek1 from "/assets/proyek/ss.png";
+import Proyek2 from "/assets/proyek/faceid.png";
+import Proyek3 from "/assets/proyek/trc.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    nama: "Todo CLI App",
+    desk: "A simple todo app using Rust programming language",
+    tools: ["Rust", "Cargo"],
     dad: "200",
+    link: "https://github.com/Wicayonima-Reborn/ToDo-CLI-Rust",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper"],
+    nama: "Face Detection App",
+    desk: "An application that can detect faces in images using Python programming language",
+    tools: ["Python", "OpenCV", "Face Recognition"],
     dad: "300",
+    link: "https://github.com/Wicayonima-Reborn/Face-Detection-app",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    nama: "Responsive Web with Vite + React + Tailwind",
+    desk: "A responsive web application built using Vite, ReactJS, and TailwindCSS",
     tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
     dad: "400",
+    link: "https://github.com/Wicayonima-Reborn/Portfolio-vite-react-tailwind",
   },
 ];
