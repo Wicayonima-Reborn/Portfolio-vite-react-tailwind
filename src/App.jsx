@@ -90,29 +90,86 @@ function App() {
      </div>
 
       {/* Contact */}
-     <div className="contact mt-32 sm:p-10 p-0" id="contact" data-aos-once="true">
-      <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Contact</h1>
-      <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Let's connect with me</p>
-      <form action="https://formspree.io/f/xeozrejq"method="POST" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <label className="font-semibold">Name</label>
-            <input type="text" name="name" placeholder="Enter your name..." className="border border-zinc-500 p-2 rounded-md" required/>
-          </div>
-          <div className="flex flex-col gap-2">
-            <label className="font-semibold">Email</label>
-            <input type="email" name="email" placeholder="Enter  your email..." className="border border-zinc-500 p-2 rounded-md" required/>
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="pesan" className="font-semibold">Message</label>
-            <textarea name="pesan" id="pesan" cols="45" rows="7 " placeholder="Enter your message..." className="border border-zinc-500 p-2 rounded-md" required></textarea>
-          </div>
-          <div >
-            <button type="submit" className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600">Send the message</button>
-          </div>
-        </div>
-      </form>
-     </div>
+<div
+  className="contact mt-32 sm:p-10 p-4"
+  id="contact"
+  data-aos-once="true"
+>
+  <h1
+    className="text-4xl mb-2 font-bold text-center"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-once="true"
+  >
+    Contact
+  </h1>
+  <p
+    className="text-base/loose text-center mb-10 opacity-50"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    data-aos-once="true"
+  >
+    Let's connect with me
+  </p>
+
+  <form
+    action="https://formspree.io/f/xeozrejq"
+    method="POST"
+    className="bg-zinc-800 sm:p-10 p-6 w-full max-w-md mx-auto rounded-md"
+    autoComplete="off"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="500"
+    data-aos-once="true"
+  >
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-2">
+        <label className="font-semibold">Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name..."
+          className="border border-zinc-500 p-2 rounded-md"
+          required
+        />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <label className="font-semibold">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email..."
+          className="border border-zinc-500 p-2 rounded-md"
+          required
+        />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <label htmlFor="pesan" className="font-semibold">
+          Message
+        </label>
+        <textarea
+          name="pesan"
+          id="pesan"
+          cols="45"
+          rows="7"
+          placeholder="Enter your message..."
+          className="border border-zinc-500 p-2 rounded-md"
+          required
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600"
+      >
+        Send the message
+      </button>
+    </div>
+  </form>
+</div>
 
     </>
   )
